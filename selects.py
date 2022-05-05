@@ -1,11 +1,11 @@
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
-import time
+import time # импортируем объект time
 
 link = "http://suninjuly.github.io/selects1.html"
 
-browser = webdriver.Chrome()
-browser.get(link)
+browser = webdriver.Chrome() # инициализируем webdriver с Chrome
+browser.get(link) # открываем ссылку в браузере
 
 try:
    firstVal = int(browser.find_element_by_id("num1").text) # получаем текстовое содержимое элемента 1 по ID и преобразуем в число
